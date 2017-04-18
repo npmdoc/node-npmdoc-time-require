@@ -1,0 +1,161 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/jaguard/time-require"
+
+    >time-require (v0.1.2)</a>
+</h1>
+<h4>Displays the execution time for Node.js modules loading; inspired by @sindresorhus 'time-grunt'</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.time-require">module time-require</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.time-require.requireHook">
+            function <span class="apidocSignatureSpan">time-require.</span>requireHook
+            <span class="apidocSignatureSpan">(listener, autohook)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.time-require.requireHook">module time-require.requireHook</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.time-require.requireHook.requireHook">
+            function <span class="apidocSignatureSpan">time-require.</span>requireHook
+            <span class="apidocSignatureSpan">(listener, autohook)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.time-require" id="apidoc.module.time-require">module time-require</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.time-require.requireHook" id="apidoc.element.time-require.requireHook">
+        function <span class="apidocSignatureSpan">time-require.</span>requireHook
+        <span class="apidocSignatureSpan">(listener, autohook)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requireHook = function (listener, autohook) {
+	if (typeof listener !== &#x22;function&#x22;) {
+		throw new Error(&#x22;The hooking function should be set&#x22;);
+	}
+	// set the listener
+	_listener = listener;
+	// if autohook (by default),
+	if (autohook !== false) {
+		_hook();
+	}
+	return {
+		hookedAt: _hookedAt,
+		hook: _hook,
+		unhook: _unhook
+	};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.time-require.requireHook" id="apidoc.module.time-require.requireHook">module time-require.requireHook</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.time-require.requireHook.requireHook" id="apidoc.element.time-require.requireHook.requireHook">
+        function <span class="apidocSignatureSpan">time-require.</span>requireHook
+        <span class="apidocSignatureSpan">(listener, autohook)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requireHook = function (listener, autohook) {
+	if (typeof listener !== &#x22;function&#x22;) {
+		throw new Error(&#x22;The hooking function should be set&#x22;);
+	}
+	// set the listener
+	_listener = listener;
+	// if autohook (by default),
+	if (autohook !== false) {
+		_hook();
+	}
+	return {
+		hookedAt: _hookedAt,
+		hook: _hook,
+		unhook: _unhook
+	};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
